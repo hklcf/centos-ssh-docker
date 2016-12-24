@@ -2,7 +2,7 @@ FROM centos:latest
 
 MAINTAINER HKLCF <hklcfs@gmail.com>
 
-RUN yum update && yum upgrade && yum install -y \
+RUN yum update -y && yum upgrade -y && yum install -y \
   openssh-server \
   && rm -rf /var/cache/yum/*
 
