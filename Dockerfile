@@ -12,7 +12,6 @@ RUN mkdir /var/run/sshd
 
 RUN sed 's/#PermitRootLogin yes/PermitRootLogin yes/' -i /etc/ssh/sshd_config
 
-#RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
 RUN ssh-keygen -A
 
 EXPOSE 22
